@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100vw;
+  height: 100vh; }
+
+.glyphicon-menu-hamburger {
+  font-size: 40px;
+  color: white; }
+
+.navbar {
+  position: absolute;
+  right: 70px;
+  top: 20px;
+  z-index: 1; }
+
+.left {
+  float: left;
+  background-size: cover;
+  background: url("../img/brown-cover.jpg");
+  width: 33.33%;
+  height: 100vh; }
+
+.center {
+  float: left;
+  background-size: cover;
+  background-image: url("../img/boy-woods-photo.jpg");
+  width: 33.33%;
+  height: 100vh; }
+
+.right {
+  float: right;
+  background-size: cover;
+  background-image: url("../img/girl-fire-photo.jpg");
+  width: 33.33%;
+  height: 100vh; }
+
+.content img {
+  display: block;
+  margin: 0 auto;
+  height: 110px;
+  margin-bottom: 5px; }
+
+.book-cover {
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+  position: absolute;
+  bottom: 20%;
+  left: 10%; }
+
+.button {
+  font-size: 2vw;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  height: 7vh;
+  width: 25vw;
+  text-align: center;
+  line-height: 7vh;
+  border-width: 2px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+
+.trackers-bay-area {
+  background: #C44533;
+  background: #c44533;
+  border-style: Solid;
+  border-color: #E6E0CE;
+  border-color: #e6e0ce; }
+
+.trackers-portland {
+  background: #478398;
+  background: #478398;
+  border-style: Solid;
+  border-color: #E6E0CE;
+  border-color: #e6e0ce; }
+
+.trackers-books {
+  background: #6D8538;
+  background: #6d8538;
+  border-style: Solid;
+  border-color: #E6E0CE;
+  border-color: #e6e0ce; }
+
+.left, .center, .right {
+  position: relative; }
+
+.content {
+  position: absolute;
+  bottom: 5%;
+  left: 12.5%; }
+
+/*# sourceMappingURL=main.css.map */

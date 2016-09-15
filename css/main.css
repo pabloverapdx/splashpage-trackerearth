@@ -34,7 +34,6 @@ html {
   letter-spacing: 2px; }
   @media screen and (max-width: 769px) {
     .choose-your-header {
-      border: 1px solid magenta;
       position: absolute;
       top: 30%;
       left: 50%;
@@ -51,7 +50,6 @@ html {
   letter-spacing: 16px; }
   @media screen and (max-width: 769px) {
     .adventure-header {
-      border: 1px solid magenta;
       position: absolute;
       top: 35%;
       left: 50%;
@@ -66,7 +64,6 @@ html {
   z-index: 1; }
   @media screen and (max-width: 769px) {
     .splash-logo img {
-      border: 1px solid magenta;
       height: 8vw;
       margin-left: 10%;
       top: 5%; } }
@@ -201,7 +198,6 @@ html {
 
 @media screen and (max-width: 769px) {
   .splash-mobile-nav {
-    border: 1px solid magenta;
     position: absolute;
     right: 20px; } }
 

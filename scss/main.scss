@@ -38,7 +38,6 @@ html {
   font-size: 3vw;
   letter-spacing: 2px;
   @media screen and (max-width: 769px) {
-    border: 1px solid magenta;
     position: absolute;
     top: 30%; left: 50%;
     transform: translate(-50%, -50%);
@@ -54,7 +53,6 @@ html {
   font-size: 6vw;
   letter-spacing: 16px;
   @media screen and (max-width: 769px) {
-    border: 1px solid magenta;
     position: absolute;
     top: 35%; left: 50%;
     transform: translate(-50%, -50%);
@@ -69,7 +67,6 @@ html {
   transform: translate(-30%, -30%);
   z-index: 1;
   @media screen and (max-width: 769px) {
-    border: 1px solid magenta;
     height: 8vw;
     margin-left: 10%;
     top: 5%;
@@ -227,7 +224,6 @@ html {
 
 .splash-mobile-nav {
   @media screen and (max-width: 769px) {
-    border: 1px solid magenta;
     position: absolute;
     right: 20px;
    }

@@ -1,12 +1,16 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 * {
   margin: 0;
   padding: 0; }
 
 html {
-  height: 100vh; }
-
-body {
-  width: 100vw;
+  width: 100%;
   height: 100vh; }
 
 .glyphicon-menu-hamburger {
@@ -19,7 +23,7 @@ body {
   top: 20px;
   z-index: 1; }
 
-.header {
+.choose-your-header {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -29,7 +33,7 @@ body {
   font-size: 3vw;
   letter-spacing: 2px; }
 
-.header1 {
+.adventure-header {
   position: absolute;
   top: 20%;
   left: 50%;
@@ -53,10 +57,6 @@ body {
   background: url("../img/brown-cover.jpg");
   width: 33.33%;
   height: 100vh; }
-  @media screen and (max-width: 769px) {
-    .left {
-      width: 100%;
-      background-image: none; } }
 
 .center {
   float: left;
@@ -64,11 +64,6 @@ body {
   background-image: url("../img/boy-woods-photo.jpg");
   width: 33.33%;
   height: 100vh; }
-  @media screen and (max-width: 769px) {
-    .center {
-      width: 100%;
-      background-image: none;
-      height: 20vh; } }
 
 .right {
   float: right;
@@ -76,14 +71,6 @@ body {
   background-image: url("../img/girl-fire-photo.jpg");
   width: 33.33%;
   height: 100vh; }
-  @media screen and (max-width: 769px) {
-    .right {
-      width: 100%;
-      height: 80vh;
-      position: absolute;
-      top: -100%;
-      left: 50%;
-      transform: translate(-50%, -50%); } }
 
 .content img {
   display: block;
@@ -143,68 +130,57 @@ body {
   left: 12.5%; }
 
 @media screen and (max-width: 769px) {
-  .content-blue {
-    width: 100%;
-    background: #478398;
-    background: #478398;
-    height: 20vh;
-    position: absolute;
-    top: -150%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .content-blue img {
-      background: #478398;
-      background: #478398;
-      display: inline-block;
-      border: 1px solid red;
-      max-width: 40vw; } }
-  @media screen and (max-width: 769px) and (max-width: 769px) {
-    .content-blue .trackers-portland {
-      border: none;
-      display: inline-block;
-      width: 200px; } }
+  .wrapper {
+    display: none; } }
 
-@media screen and (max-width: 769px) {
-  .content-orange {
-    width: 100%;
-    background: #C44533;
-    background: #c44533;
-    height: 200px;
-    position: absolute;
-    bottom: -80%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .content-orange img {
-      background: #C44533;
-      background: #c44533;
-      display: inline-block;
-      border: 1px solid red;
-      max-width: 40vw; } }
-  @media screen and (max-width: 769px) and (max-width: 769px) {
-    .content-orange .trackers-bay-area {
-      border: none;
-      display: inline-block;
-      width: 200px; } }
+.contentawesome {
+  background-image: url("../img/girl-fire-photo.jpg");
+  background-size: cover;
+  height: 52vh; }
 
-@media screen and (max-width: 769px) {
-  .content-green {
-    width: 100%;
-    background: #6D8538;
-    background: #6d8538;
-    height: 200px;
-    position: absolute;
-    bottom: -50%;
-    left: 50%;
-    transform: translate(-50%, -50%); } }
-  @media screen and (max-width: 769px) and (max-width: 769px) {
-    .content-green .trackers-books {
-      border: none;
-      display: inline-block;
-      float: right;
-      width: 200px; } }
+.brown-space {
+  width: 100%;
+  height: 3vh;
+  background-color: brown; }
 
-@media screen and (max-width: 769px) {
-  .book-cover {
+.mobile-image img {
+  position: absolute;
+  max-width: 20%;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%); }
+
+.mobile-trackers-portland {
+  color: white;
+  width: 160px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%); }
+
+.blue-trackers {
+  width: 100%;
+  height: 15vh;
+  background: #478398;
+  background: #478398;
+  position: relative; }
+
+.red-trackers {
+  width: 100%;
+  height: 15vh;
+  background: #C44533;
+  background: #c44533;
+  position: relative; }
+
+.green-trackers {
+  width: 100%;
+  height: 15vh;
+  background: #6D8538;
+  background: #6d8538;
+  position: relative; }
+
+@media screen and (min-width: 769px) {
+  .wrapper-mobile {
     display: none; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,20 +1,22 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
+  width: 100%;
   height: 100vh;
 }
-
-body {
-  width: 100vw;
-  height: 100vh;
-}
-
 
 // Hamburger nav
-
 .glyphicon-menu-hamburger {
   font-size: 40px;
   color: white;
@@ -27,7 +29,7 @@ body {
 }
 
 // Header
-.header {
+.choose-your-header {
   position: absolute;
   top: 10%; left: 50%;
   transform: translate(-50%, -50%);
@@ -37,7 +39,7 @@ body {
   letter-spacing: 2px;
 }
 
-.header1 {
+.adventure-header {
   position: absolute;
   top: 20%; left: 50%;
   transform: translate(-50%, -50%);
@@ -62,10 +64,7 @@ body {
   background: url('../img/brown-cover.jpg');
   width: 33.33%;
   height: 100vh;
-  @media screen and (max-width: 769px) {
-    width: 100%;
-    background-image: none;
-  }
+
 }
 
 .center {
@@ -74,11 +73,7 @@ body {
   background-image: url('../img/boy-woods-photo.jpg');
   width: 33.33%;
   height: 100vh;
-  @media screen and (max-width: 769px) {
-    width: 100%;
-    background-image: none;
-    height: 20vh;// hides kid in tree image
-  }
+
 }
 
 .right {
@@ -87,13 +82,6 @@ body {
   background-image: url('../img/girl-fire-photo.jpg');
   width: 33.33%;
   height: 100vh;
-  @media screen and (max-width: 769px) {
-    width: 100%;
-    height: 80vh;
-    position: absolute;
-    top: -100%; left: 50%;
-    transform: translate(-50%, -50%);
-  }
 }
 
 .content img {
@@ -159,86 +147,68 @@ body {
   bottom: 5%; left: 12.5%;
 }
 
-// Blue content Media queries for mobile version
-.content-blue {
+//////////////////////////   STYLES FOR MOBILE     ///////////////////////////
+.wrapper {
   @media screen and (max-width: 769px) {
+    display: none;
+  }
+}
+
+.contentawesome {
+  background-image: url('../img/girl-fire-photo.jpg');
+  background-size: cover;
+  height: 52vh;
+}
+
+.brown-space {
   width: 100%;
+  height: 3vh;
+  background-color: brown;
+}
+///////////////////////////////////
+
+// controls mobile version sketches //
+.mobile-image img {
+  position: absolute;
+  max-width: 20%;
+  top: 50%; left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+// controls mobile verison of text //
+.mobile-trackers-portland {
+  color: white;
+  width: 160px;
+  position: absolute;
+  top: 50%; left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.blue-trackers {
+  width: 100%;
+  height: 15vh;
   background : #478398;
   background : rgba(71, 131, 152, 1);
-  height: 20vh;
-  position: absolute;
-  top: -150%; left: 50%;
-  transform: translate(-50%, -50%);
-    img {
-      // float: left;
-      background : #478398;
-      background : rgba(71, 131, 152, 1);
-      display: inline-block;
-      border: 1px solid red;
-      max-width: 40vw;
-    }
-    .trackers-portland {
-      @media screen and (max-width: 769px) {
-      border: none;
-      display: inline-block;
-      width: 200px;
-      }
-    }
-  }
+  position: relative;
 }
-
-// Orange content mdia queries for mobile verison
-
-.content-orange {
-  @media screen and (max-width: 769px) {
+.red-trackers {
   width: 100%;
+  height: 15vh;
   background : #C44533;
   background : rgba(196, 69, 51, 1);
-  height: 200px;
-  position: absolute;
-  bottom: -80%; left: 50%;
-  transform: translate(-50%, -50%);
-    img {
-      // float: left;
-      background : #C44533;
-      background : rgba(196, 69, 51, 1);
-      display: inline-block;
-      border: 1px solid red;
-      max-width: 40vw;
-    }
-    .trackers-bay-area {
-      @media screen and (max-width: 769px) {
-      border: none;
-      display: inline-block;
-      width: 200px;
-      }
-    }
-  }
+  position: relative;
 }
 
-// Green media queries for mobile verison
-.content-green {
-  @media screen and (max-width: 769px) {
+.green-trackers {
   width: 100%;
+  height: 15vh;
   background : #6D8538;
   background : rgba(109, 133, 56, 1);
-  height: 200px;
-  position: absolute;
-  bottom: -50%; left: 50%;
-  transform: translate(-50%, -50%);
-    .trackers-books {
-      @media screen and (max-width: 769px) {
-      border: none;
-      display: inline-block;
-      float: right;
-      width: 200px;
-      }
-    }
-  }
+  position: relative;
 }
 
-.book-cover {
-    @media screen and (max-width: 769px) {
-      display: none;
-    }
+.wrapper-mobile {
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
 }

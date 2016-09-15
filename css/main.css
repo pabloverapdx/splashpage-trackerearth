@@ -32,16 +32,30 @@ html {
   color: white;
   font-size: 3vw;
   letter-spacing: 2px; }
+  @media screen and (max-width: 769px) {
+    .choose-your-header {
+      border: 1px solid magenta;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
 
 .adventure-header {
   position: absolute;
   top: 20%;
-  left: 50%;
+  left: 51%;
   transform: translate(-50%, -50%);
   z-index: 1;
   color: white;
-  font-size: 5vw;
-  letter-spacing: 15px; }
+  font-size: 6vw;
+  letter-spacing: 16px; }
+  @media screen and (max-width: 769px) {
+    .adventure-header {
+      border: 1px solid magenta;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
 
 .splash-logo img {
   height: 3vw;
@@ -50,6 +64,12 @@ html {
   left: 10%;
   transform: translate(-30%, -30%);
   z-index: 1; }
+  @media screen and (max-width: 769px) {
+    .splash-logo img {
+      border: 1px solid magenta;
+      height: 8vw;
+      margin-left: 10%;
+      top: 5%; } }
 
 .left {
   float: left;
@@ -178,6 +198,18 @@ html {
   background: #6D8538;
   background: #6d8538;
   position: relative; }
+
+@media screen and (max-width: 769px) {
+  .splash-mobile-nav {
+    border: 1px solid magenta;
+    position: absolute;
+    right: 20px; } }
+
+@media screen and (max-width: 769px) {
+  .hello-this-working {
+    border: 1px solid red;
+    position: absolute;
+    left: -120px; } }
 
 @media screen and (min-width: 769px) {
   .wrapper-mobile {

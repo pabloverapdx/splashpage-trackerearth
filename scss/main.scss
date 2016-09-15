@@ -37,17 +37,30 @@ html {
   color: white;
   font-size: 3vw;
   letter-spacing: 2px;
+  @media screen and (max-width: 769px) {
+    border: 1px solid magenta;
+    position: absolute;
+    top: 30%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .adventure-header {
   position: absolute;
-  top: 20%; left: 50%;
+  top: 20%; left: 51%;
   transform: translate(-50%, -50%);
   z-index: 1;
   color: white;
-  font-size: 5vw;
-  letter-spacing: 15px;
+  font-size: 6vw;
+  letter-spacing: 16px;
+  @media screen and (max-width: 769px) {
+    border: 1px solid magenta;
+    position: absolute;
+    top: 35%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
+
 
 .splash-logo img {
   height: 3vw;
@@ -55,6 +68,12 @@ html {
   top: 10%; left: 10%;
   transform: translate(-30%, -30%);
   z-index: 1;
+  @media screen and (max-width: 769px) {
+    border: 1px solid magenta;
+    height: 8vw;
+    margin-left: 10%;
+    top: 5%;
+  }
 }
 
 // Body styles
@@ -165,7 +184,6 @@ html {
   height: 3vh;
   background-color: brown;
 }
-///////////////////////////////////
 
 // controls mobile version sketches //
 .mobile-image img {
@@ -175,7 +193,7 @@ html {
   transform: translate(-50%, -50%);
 }
 
-// controls mobile verison of text //
+// controls mobile version of text //
 .mobile-trackers-portland {
   color: white;
   width: 160px;
@@ -207,6 +225,22 @@ html {
   position: relative;
 }
 
+.splash-mobile-nav {
+  @media screen and (max-width: 769px) {
+    border: 1px solid magenta;
+    position: absolute;
+    right: 20px;
+   }
+}
+
+.hello-this-working {
+  @media screen and (max-width: 769px) {
+    border: 1px solid red;
+    position: absolute;
+    left: -120px;
+  }
+}
+// hides mobile version when on landspace mode //
 .wrapper-mobile {
   @media screen and (min-width: 769px) {
     display: none;

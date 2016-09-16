@@ -166,6 +166,9 @@ html {
   top: 50%;
   left: 20%;
   transform: translate(-50%, -50%); }
+  @media screen and (max-width: 769px) {
+    .mobile-image img {
+      max-height: 50%; } }
 
 .mobile-trackers-portland {
   color: white;
@@ -173,7 +176,8 @@ html {
   position: absolute;
   top: 50%;
   left: 70%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  border: 1px solid magenta; }
 
 .blue-trackers {
   width: 100%;
@@ -203,7 +207,6 @@ html {
 
 @media screen and (max-width: 769px) {
   .hello-this-working {
-    border: 1px solid red;
     position: absolute;
     left: -120px; } }
 

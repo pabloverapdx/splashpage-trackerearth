@@ -176,8 +176,7 @@ html {
   position: absolute;
   top: 50%;
   left: 70%;
-  transform: translate(-50%, -50%);
-  border: 1px solid magenta; }
+  transform: translate(-50%, -50%); }
 
 .blue-trackers {
   width: 100%;
@@ -206,7 +205,7 @@ html {
     right: 20px; } }
 
 @media screen and (max-width: 769px) {
-  .hello-this-working {
+  .mobile-dropdown {
     position: absolute;
     left: -120px; } }
 

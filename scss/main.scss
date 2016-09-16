@@ -206,7 +206,6 @@ html {
   position: absolute;
   top: 50%; left: 70%;
   transform: translate(-50%, -50%);
-  border: 1px solid magenta;
 }
 
 .blue-trackers {
@@ -239,7 +238,7 @@ html {
    }
 }
 
-.hello-this-working {
+.mobile-dropdown {
   @media screen and (max-width: 769px) {
     position: absolute;
     left: -120px;
